@@ -5,12 +5,19 @@ import { ViteWeappTailwindcssPlugin as vwt, postcssWeappTailwindcssRename } from
 import AutoImport from 'unplugin-auto-import/vite';
 import vueApi from "./vue-api";
 import uniappApi from "./uniapp-api";
+import copy from 'rollup-plugin-copy'
 
 const isH5 = process.env.UNI_PLATFORM === 'h5';
 
 const vitePlugins = [
   uni(), 
   !isH5 ? vwt() : undefined,
+  copy({
+    targets: [{
+        src: './src/cloudfunctions',
+        dest: './dist/dev/mp-weixin'
+    }]
+}),
   AutoImport({
     imports: [
       {

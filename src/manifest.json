@@ -51,6 +51,7 @@
     /* 小程序特有相关 */
     "mp-weixin" : {
         "appid" : "wx4344b6d410f7eafd",
+        "cloudfunctionRoot":"cloudfunctions/"
         "optimization" : {
             "subPackages" : true
         },
