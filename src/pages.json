@@ -116,6 +116,41 @@
 					}
 				}
 			]
+		},
+		{
+			"root":"minePackage",
+			"pages":[
+				{
+					"path": "pages/userAdmin",
+					"style": {
+						"navigationBarTitleText": "用户管理"
+					}
+				},
+				{
+					"path": "pages/orderForm",
+					"style": {
+						"navigationBarTitleText": "商城订单"
+					}
+				},
+				{
+					"path": "pages/resourceAdmin",
+					"style": {
+						"navigationBarTitleText": "资源管理"
+					}
+				},
+				{
+					"path": "pages/brandAdmin",
+					"style": {
+						"navigationBarTitleText": "品牌管理"
+					}
+				},
+				{
+					"path": "pages/safetyAdmin",
+					"style": {
+						"navigationBarTitleText": "安全管理"
+					}
+				}
+			]
 		}
 	],
 	// 分包预加载，优化页面打开速度以及运行优化
