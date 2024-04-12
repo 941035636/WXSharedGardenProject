@@ -1,0 +1,18 @@
+<cover-view class='nav-wrap' style='height: {{height}}rpx;'>
+   <!-- 导航栏背景图片 -->
+   <cover-image class="backgroundimg" wx:if="{{navbarData.address}}" src="{{navbarData.address}}" bindload="imgLoaded"
+      style="width:{{imageWidth}}px;height:{{imageHeight}}px" ></cover-image>
+   <!-- // 导航栏 中间的标题-->
+   <cover-view class='nav-title ' 
+	  style='line-height: {{textHeader}}rpx;  {{navbarData.showCapsule?"margin:auto;":"margin-left:0rpx;"}}   {{navbarData.weight?"font-weight:700;":"font-weight: 400; "}}'>
+      {{navbarData.title}}
+   </cover-view>
+   <!-- 返回按钮  -->
+   <cover-view style='display:flex; justify-content: space-around; flex-direction: column'>
+      <cover-view class='nav-capsule' style='height: {{height}}rpx;' wx:if='{{navbarData.showCapsule==1}}'>
+         <cover-view bindtap='_navback'>
+            <cover-image src='/static/fh.png' mode='aspectFit' class='back-pre'></cover-image>
+         </cover-view>
+      </cover-view>
+   </cover-view>
+</cover-view>
