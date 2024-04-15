@@ -85,20 +85,4 @@ export class ExpertService {
 	 * @param {templateInstanceId }  //检查项id
 	 */
 	public static finishedCheck = (data?: request) => RequestMethods.get(API_URl.FINISHEDCHECK, { data })
-
-	/**
-	  * 提交报告
-	  * 
-	 * @param {templateInstanceId }  //检查项id
-	  */
-	public static commitreport = (data?: request) => RequestMethods.get(API_URl.COMMITREPORT, { data })
-
-	/**
- * 删除检查项
- * @param {templateInstanceId}  检查表实例id
- * @param {groupInstanceId }  检查项id
- */
-	public static deleteGroupInstance = (data?: request) => RequestMethods.get(API_URl.DELETEGROUPINSTANCE, { data })
-
-
 }
