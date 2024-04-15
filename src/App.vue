@@ -1,7 +1,7 @@
 <script setup lang="ts">
 
 onLaunch(() => {
-  console.log("App Launch");
+  console.log(process.env.VITE_WELL_FUNCTION_EVN,'看一下环境区分的云函数id');
   // if (!wx.cloud) {
   //     console.error('请使用 2.2.3 或以上的基础库以使用云能力')
   // } else {
